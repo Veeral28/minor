@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Doctor - Health Management App</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Find a Doctor</h1>
+        <form id="doctorSearchForm" class="doctor-search-form">
+            <label for="specialty">Specialty</label>
+            <input type="text" id="specialty" name="specialty" placeholder="e.g., Cardiologist, Dermatologist" required>
+            <button type="button" class="btn-primary" onclick="searchDoctors()">Search</button>
+        </form>
+        <div id="doctorList" class="result-container">
+            <!-- JavaScript will populate doctor list here -->
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>

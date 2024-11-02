@@ -1,0 +1,40 @@
+/* General Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; background-color: #f5f8fa; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+
+h1 { color: #333; margin-bottom: 10px; font-size: 24px; }
+
+p { color: #555; margin-bottom: 20px; }
+
+.container, .auth-container, .main-container {
+    width: 90%; max-width: 500px;
+    background: white; padding: 20px 30px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; text-align: center;
+}
+
+label { display: block; font-weight: bold; margin-top: 10px; margin-bottom: 5px; text-align: left; color: #444; }
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="time"], textarea {
+    width: 100%; padding: 10px; margin-top: 5px;
+    border: 1px solid #ddd; border-radius: 5px; font-size: 16px;
+}
+
+button.btn-primary {
+    width: 100%; padding: 10px; margin-top: 20px;
+    color: white; background-color: #4CAF50;
+    border: none; border-radius: 5px; font-size: 16px; cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn-primary:hover { background-color: #45a049; }
+
+.result-container { margin-top: 20px; text-align: left; }
+
+/* Additional styling for reminders and doctors */
+.reminder-form, .doctor-search-form { margin-bottom: 20px; }
+
+.result-container h3 { font-size: 18px; margin-bottom: 10px; color: #333; }
+
+.reminder-item, .doctor-item { border-bottom: 1px solid #ddd; padding: 10px 0; }
+
