@@ -1,19 +1,65 @@
+<!-- diagnosis.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnosis Result - Health Management App</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <title>Diagnosis - Health Management App</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/diagnosis.css">
 </head>
 <body>
+
+    <header class="header">
+        <div class="logo-placeholder"></div>
+        <h1>Health Management App</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="symptom_checker.html">Symptom Checker</a>
+            <a href="doctors.html">Find a Doctor</a>
+            <a href="reminder.html">Reminders</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+
     <div class="main-container">
-        <h1>Diagnosis Results</h1>
-        <div id="diagnosisResult" class="result-container">
-            <!-- JavaScript will populate diagnosis here -->
+        <h2>Diagnosis Results</h2>
+
+        <!-- Current Diagnosis Section -->
+        <div class="diagnosis-results">
+            <h3>Current Diagnosis</h3>
+            <p class="diagnosis-result">Diagnosis Result: Common Cold</p>
+            <p class="diagnosis-medication">Suggested Medication: Rest, hydration, and over-the-counter cold relief</p>
+            <p class="diagnosis-precautions">Precautions: Avoid cold weather, rest well.</p>
         </div>
-        <button onclick="window.location.href='doctors.html'" class="btn-primary">Find a Doctor</button>
+
+        <!-- Previous Diagnoses Section -->
+        <div class="previous-results">
+            <h3>Previous Diagnoses</h3>
+
+            <!-- Placeholder cards for previous diagnosis results -->
+            <div class="previous-result-card">
+                <p><strong>Date:</strong> October 25, 2023</p>
+                <p><strong>Diagnosis:</strong> Flu</p>
+                <p><strong>Medication:</strong> Antiviral medication</p>
+                <p><strong>Precautions:</strong> Rest, hydration, avoid contact with others</p>
+            </div>
+
+            <div class="previous-result-card">
+                <p><strong>Date:</strong> September 15, 2023</p>
+                <p><strong>Diagnosis:</strong> Allergies</p>
+                <p><strong>Medication:</strong> Antihistamines</p>
+                <p><strong>Precautions:</strong> Avoid allergens, keep windows closed</p>
+            </div>
+
+            <div class="previous-result-card">
+                <p><strong>Date:</strong> August 5, 2023</p>
+                <p><strong>Diagnosis:</strong> Migraine</p>
+                <p><strong>Medication:</strong> Pain relief medication</p>
+                <p><strong>Precautions:</strong> Avoid bright lights, rest in a dark room</p>
+            </div>
+        </div>
     </div>
-    <script src="assets/script.js"></script>
+
 </body>
 </html>
