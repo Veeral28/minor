@@ -1,23 +1,42 @@
+<!-- doctors.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find a Doctor - Health Management App</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/doctors.css">
 </head>
 <body>
+
+    <header class="header">
+        <div class="logo-placeholder"></div>
+        <h1>Health Management App</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="symptom_checker.html">Symptom Checker</a>
+            <a href="diagnosis.html">Diagnosis Results</a>
+            <a href="reminder.html">Reminders</a>
+        </nav>
+    </header>
+
     <div class="main-container">
-        <h1>Find a Doctor</h1>
-        <form id="doctorSearchForm" class="doctor-search-form">
-            <label for="specialty">Specialty</label>
-            <input type="text" id="specialty" name="specialty" placeholder="e.g., Cardiologist, Dermatologist" required>
-            <button type="button" class="btn-primary" onclick="searchDoctors()">Search</button>
+        <h2>Find a Doctor</h2>
+        <p>Search for a doctor by specialty or location:</p>
+        
+        <form class="doctor-search-form">
+            <label for="specialty">Specialty:</label>
+            <input type="text" id="specialty" name="specialty" placeholder="e.g., Cardiologist" required>
+            
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="e.g., New York" required>
+            
+            <button type="button" onclick="searchDoctors()">Search</button>
         </form>
-        <div id="doctorList" class="result-container">
-            <!-- JavaScript will populate doctor list here -->
-        </div>
+        
+        <div id="doctorResults" class="doctor-results"></div>
     </div>
-    <script src="assets/script.js"></script>
+
 </body>
 </html>

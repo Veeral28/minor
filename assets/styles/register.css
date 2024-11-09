@@ -1,0 +1,57 @@
+/* assets/styles/register.css */
+
+.main-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+h2 {
+    color: var(--base-color);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register-form label {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.register-form .btn-primary {
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: var(--base-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.register-form .btn-primary:active {
+    background-color: #004494;
+}

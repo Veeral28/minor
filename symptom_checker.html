@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check Symptoms - Health Management App</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <title>Symptom Checker - Health Management App</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/symptom_checker.css">
 </head>
 <body>
+
+    <header class="header">
+        <div class="logo-placeholder"></div>
+        <h1>Health Management App</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="symptom_checker.html">Symptom Checker</a>
+            <a href="doctors.html">Find a Doctor</a>
+            <a href="reminder.html">Reminders</a>
+        </nav>
+    </header>
+
     <div class="main-container">
-        <h1>Symptom Checker</h1>
-        <p>Enter your symptoms to get a probable diagnosis.</p>
-        <form id="symptomForm" class="symptom-form">
-            <label for="symptoms">Symptoms</label>
-            <input type="text" id="symptoms" name="symptoms" placeholder="e.g., fever, headache, cough" required>
-            <button type="button" class="btn-primary" onclick="submitSymptoms()">Get Diagnosis</button>
+        <h2>Symptom Checker</h2>
+        <form class="symptom-form">
+            <label for="symptoms">Enter Symptoms:</label>
+            <input type="text" id="symptoms" name="symptoms" placeholder="e.g., fever, cough, headache">
+            <button type="button">Check Symptoms</button>
         </form>
-        <div id="diagnosisResult" class="result-container"></div>
     </div>
-    <script src="assets/script.js"></script>
+
 </body>
 </html>

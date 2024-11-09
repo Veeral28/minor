@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Health Management App</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/register.css">
 </head>
 <body>
-    <div class="auth-container">
-        <div class="auth-box">
-            <h1>Create an Account</h1>
-            <p>Join us to manage your health easily.</p>
-            <form id="registerForm" class="auth-form">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter username" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter email" required>
+    <header class="header">
+        <div class="logo-placeholder"></div>
+        <h1>Health Management App</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="symptom_checker.html">Symptom Checker</a>
+            <a href="doctors.html">Find a Doctor</a>
+            <a href="reminder.html">Reminders</a>
+        </nav>
+    </header>
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter password" required>
-                
-                <button type="submit" class="btn-primary">Register</button>
-            </form>
-            <p class="switch-auth">Already have an account? <a href="login.html">Login here</a></p>
-        </div>
+    <div class="main-container">
+        <h2>Register</h2>
+        <form class="register-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="btn-primary">Register</button>
+        </form>
     </div>
-    <script src="assets/script.js"></script>
+
 </body>
 </html>
