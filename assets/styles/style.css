@@ -1,9 +1,9 @@
-/* assets/styles/style.css */
+
 
 :root {
     --base-color: #00264e; /* Blue color for the site */
     --text-color: #333;
-    --background-color: #f9f9f9;
+ 
     --header-height: 60px;
 }
 
@@ -83,4 +83,52 @@ h2 {
 
 .menu-button:hover {
     background-color: #0056b3;
+}
+
+/* assets/styles/style.css */
+
+/* Header layout */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--base-color);
+    color: white;
+    text-align: center;
+}
+
+/* Logo Placeholder */
+.logo-placeholder {
+    width: 50px; /* Set width for logo container */
+    height: 50px; /* Set height for logo container */
+    overflow: hidden; /* Hide any overflow */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px; /* Add spacing if needed */
+}
+
+.logo-placeholder img {
+    max-width: 100%; /* Fit the image within container */
+    max-height: 100%; /* Fit the image within container */
+    object-fit: contain; /* Scale image without cropping */
+}
+
+/* Background image container styles */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensures it stays behind all content */
+}
+
+/* Stretch the img inside .background-image to fill the container */
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container without distortion */
 }
