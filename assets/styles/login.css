@@ -7,6 +7,17 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.main-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    margin-bottom: 20px; /* Adds space below the image */
 }
 
 h2 {
@@ -53,4 +64,21 @@ h2 {
 
 .login-form .btn-primary:active {
     background-color: #004494;
+}
+/* Background image container styles */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensures it stays behind all content */
+}
+
+/* Stretch the img inside .background-image to fill the container */
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container without distortion */
 }
